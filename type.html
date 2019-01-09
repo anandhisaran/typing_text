@@ -7,11 +7,7 @@
 <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins|Work+Sans" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
- <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/aos.css" />
+  
     <title>Groei</title>
   </head>
   <body>
@@ -21,6 +17,23 @@
     -webkit-animation: blink .7s infinite;
     -moz-animation: blink .7s infinite;
     animation: blink .7s infinite;
+}
+h4
+{
+animation: type 3s steps(22) infinite;
+overflow:hidden;
+white-space: nowrap;
+border-right:1px solid red;
+}
+@keyframes type 
+{
+	0%{
+ width:0ch;
+	}
+	100% 
+	{
+	width:22ch;
+	}
 }
 </style>
 
@@ -37,6 +50,11 @@
                             </span>
                             <span id="typed"></span>
                         </h1>
+                        
+                        <div class="bg-dark">
+                            <h2>This is another way without script only pure css</h2>
+                            <h4 id="typed">hii hello how are you..</h4>
+                        </div>
 
 <script src="js/typed.min.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
